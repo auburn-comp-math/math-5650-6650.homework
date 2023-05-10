@@ -29,9 +29,9 @@ In this part, you will write a program to solve some test problems using the hea
     - `backtracking.py`: the implementation of the backtracking line search.
 - Implementation
   - Task: Implement the backtracking line search, the algorithm follows the following steps:
-    > 1. Initialize $\alpha$ and $\rho$ and Wolfe constant $c_1\in (0, 1)$.
+    > 1. Initialize $\alpha$ and $\rho\in(0,1)$ and Wolfe constant $c_1\in (0, 1)$.
     > 2. Set $\alpha_k = \alpha$.
-    > 3. While $f(x_k + \alpha_k d_k) > f(x_k) + c_1 \beta \alpha_k \nabla f(x_k)^T d_k$, update $\alpha_k = \alpha_k \beta$.
+    > 3. While $f(x_k + \alpha_k d_k) > f(x_k) + c_1 \rho\alpha_k \nabla f(x_k)^T d_k$, update $\alpha_k = \alpha_k \rho$.
     > 4. Return $\alpha_k$.
 - Coding (Python)
   - The function name should be `backtracking` and should be defined in the file `backtracking.py` with the following signature:
