@@ -1,4 +1,4 @@
-# starter kit for line search
+# Starter Kit for Line Search
 
 # Introduction 
 In this assignment, you will implement the following algorithms and apply them to the test problems. 
@@ -18,7 +18,7 @@ Your submission repository should be organized as follows.
 
 The test files are provided in this starter kit. You should implement the algorithms in the corresponding files. 
 
-## Backtracking Line Search
+# Backtracking Line Search
 In this part, you will write a program to solve some test problems using the heavy ball method with backtracking line search. 
 
 - Guideline
@@ -39,7 +39,7 @@ In this part, you will write a program to solve some test problems using the hea
     - `backtracking(f, grad_f, x, d, alpha, rho, c1)`: the function for the backtracking line search.
 
 
-## Steepest Descent Method
+# Steepest Descent Method
 In this part, you will write a program to solve some test problems using the steepest descent method with the exact line search and without line search (step length is fixed). 
 
 - Guideline
@@ -75,6 +75,7 @@ In this part, you will write a program to solve some test problems using the ste
     - `steepest_descent_fixed_step(f, grad_f, alpha, x0, tol, max_iter)`: the function for the steepest descent method with backtracking line search. 
     - `steepest_descent_backtracking(f, grad_f, x0, tol, max_iter)`: the function for the steepest descent method with backtracking line search.
 
+# README
 In the ``README.md`` file, you should include the following information:
 - Your name and email address.
 - The list of files in your submission repository.
