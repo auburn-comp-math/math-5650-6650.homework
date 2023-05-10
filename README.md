@@ -3,6 +3,7 @@
 # Introduction 
 In this assignment, you will implement the following algorithms and apply them to the test problems. 
 
+- Backtracking line search
 - Steepest descent method with line search
 
 Your submission repository should be organized as follows.
