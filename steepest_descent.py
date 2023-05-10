@@ -20,7 +20,7 @@ def steepest_descent_exact(f, grad_f, x, tol, max_iter):
 @params x: initial point
 @params tol: tolerance
 @params max_iter: maximum number of iterations
-@params alpha: initial step size
+@params alpha: fixed step size
 @returns: minimizer, number of iterations
 """
 def steepest_descent_fixed_step(f, grad_f, x, tol, max_iter, alpha):
