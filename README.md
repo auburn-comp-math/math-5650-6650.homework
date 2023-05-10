@@ -22,7 +22,8 @@ The test files are provided in this starter kit. You should implement the algori
 In this part, you will write a program to solve some test problems using the heavy ball method with backtracking line search. 
 
 - Guideline
-  > Here is a guideline for implementing the backtracking line search subroutine.
+  
+  Here is a guideline for implementing the backtracking line search subroutine.
   - The implementation is designed to help you understand the algorithm.
   - You are welcome to discuss this with others but should implement it on your own. 
   - The repository should contain the following file:
@@ -42,7 +43,7 @@ In this part, you will write a program to solve some test problems using the hea
 In this part, you will write a program to solve some test problems using the steepest descent method with the exact line search and without line search (step length is fixed). 
 
 - Guideline
-
+  
   Here is a guideline for implementing the steepest descent method with line search.
   - The implementation is designed to help you understand the algorithm.
   - You are welcome to discuss this with others but should implement it on your own. 
