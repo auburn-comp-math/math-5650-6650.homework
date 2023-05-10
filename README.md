@@ -52,22 +52,22 @@ In this part, you will write a program to solve some test problems using the ste
     - `test_steepest_descent.py`: the test script for `steepest_descent.py`.
 - Implementation
   - Task 1: Implement the steepest descent method with **exact** line search, the algorithm follows the following steps:
-    1. Initialize $x_0$ and set $k=0$.
-    2. Compute the search direction $d_k = -\nabla f(x_k)$.
-    3. Compute the step size $\alpha_k$ by exact line search.
-    4. Update $x_{k+1} = x_k + \alpha_k d_k$.
-    5. If the stopping criterion $\|d_k\|<\text{tol}$ is satisfied, stop; otherwise, set $k=k+1$ and go to step 2. 
+    > 1. Initialize $x_0$ and set $k=0$.
+    > 2. Compute the search direction $d_k = -\nabla f(x_k)$.
+    > 3. Compute the step size $\alpha_k$ by exact line search.
+    > 4. Update $x_{k+1} = x_k + \alpha_k d_k$.
+    > 5. If the stopping criterion $\|d_k\|<\text{tol}$ is satisfied, stop; otherwise, set $k=k+1$ and go to step 2. 
   - Task 2: Implement the steepest descent method with **fixed** step length, the algorithm follows the following steps:
-    1. Initialize $x_0$ and set $k=0$ and a fixed step size $\alpha$.
-    2. Compute the search direction $d_k = -\nabla f(x_k)$.
-    3. Update $x_{k+1} = x_k + \alpha d_k$.
-    4. If the stopping criterion $\|d_k\|<\text{tol}$ is satisfied, stop; otherwise, set $k=k+1$ and go to step 2.
+    > 1. Initialize $x_0$ and set $k=0$ and a fixed step size $\alpha$.
+    > 2. Compute the search direction $d_k = -\nabla f(x_k)$.
+    > 3. Update $x_{k+1} = x_k + \alpha d_k$.
+    > 4. If the stopping criterion $\|d_k\|<\text{tol}$ is satisfied, stop; otherwise, set $k=k+1$ and go to step 2.
   - Task 3: Implement the steepest descent method with backtracking line search, the algorithm follows the following steps:
-    1. Initialize $x_0$ and set $k=0$.
-    2. Compute the search direction $d_k = -\nabla f(x_k)$.
-    3. Compute the step size $\alpha_k$ by backtracking line search.
-    4. Update $x_{k+1} = x_k + \alpha_k d_k$.
-    5. If the stopping criterion $\|d_k\|<\text{tol}$ is satisfied, stop; otherwise, set $k=k+1$ and go to step 2.
+    > 1. Initialize $x_0$ and set $k=0$.
+    > 2. Compute the search direction $d_k = -\nabla f(x_k)$.
+    > 3. Compute the step size $\alpha_k$ by backtracking line search.
+    > 4. Update $x_{k+1} = x_k + \alpha_k d_k$.
+    > 5. If the stopping criterion $\|d_k\|<\text{tol}$ is satisfied, stop; otherwise, set $k=k+1$ and go to step 2.
 - Coding (Python)
   - The function name should be `steepest_descent_exact` and `steepest_descent_fixed` and `steepest_descent_backtracking` for the exact line search, fixed step length and backtracking line search, respectively.
   - The functions should be defined in the file `steepest_descent.py` with the following signatures:
