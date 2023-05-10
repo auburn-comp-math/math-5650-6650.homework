@@ -72,7 +72,7 @@ In this part, you will write a program to solve some test problems using the ste
   - The function name should be `steepest_descent_exact` and `steepest_descent_fixed` and `steepest_descent_backtracking` for the exact line search, fixed step length and backtracking line search, respectively.
   - The functions should be defined in the file `steepest_descent.py` with the following signatures:
     - `steepest_descent_exact(f, grad_f, x0, tol, max_iter)`: the function for the steepest descent method with exact line search.
-    - `steepest_descent_fixed_step(f, grad_f, alpha, x0, tol, max_iter)`: the function for the steepest descent method with backtracking line search. 
+    - `steepest_descent_fixed_step(f, grad_f, x0, tol, max_iter, alpha)`: the function for the steepest descent method with backtracking line search. 
     - `steepest_descent_backtracking(f, grad_f, x0, tol, max_iter)`: the function for the steepest descent method with backtracking line search.
 
 # README
