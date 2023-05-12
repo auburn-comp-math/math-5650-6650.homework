@@ -30,13 +30,13 @@ In this part, you will write a program to solve some test problems using the hea
     - `backtracking.py`: the implementation of the backtracking line search.
 - :keyboard: Implementation
   - Task: Implement the backtracking line search, the algorithm follows the following steps:
-    > 1. Initialize $\alpha$ and $\rho\in(0,1)$ and Wolfe constant $c \in (0, 1)$.
+    > 1. Initialize $\alpha$ and $\rho\in(0,1)$ and Wolfe constant $c_1 \in (0, 1)$.
     > 2. Set $\alpha_k = \alpha$.
-    > 3. While $f(x_k + \alpha_k d_k) > f(x_k) + c \rho\alpha_k \nabla f(x_k)^T d_k$, update $\alpha_k = \alpha_k \rho$.
+    > 3. While $f(x_k + \alpha_k d_k) > f(x_k) + c_1\rho\alpha_k \nabla f(x_k)^T d_k$, update $\alpha_k = \alpha_k \rho$.
     > 4. Return $\alpha_k$.
 - :computer: Coding (Python)
   - The function name should be `backtracking` and should be defined in the file `backtracking.py` with the following signature:
-    - `backtracking(f, grad_f, x, d, alpha, rho, c)`: the function for the backtracking line search. 
+    - `backtracking(objFunc, gradObjFunc, x0, pk, alpha0, c1, rho)`: the function for the backtracking line search. 
 
 
 # :round_pushpin: Steepest Descent Method
@@ -69,11 +69,11 @@ In this part, you will write a program to solve some test problems using the ste
     > 4. Update $x_{k+1} = x_k + \alpha_k d_k$.
     > 5. If the stopping criterion $\|d_k\|<\text{tol}$ is satisfied, stop; otherwise, set $k=k+1$ and go to step 2.
 - :computer: Coding (Python)
-  - The function name should be `steepest_descent_exact` and `steepest_descent_fixed` and `steepest_descent_backtracking` for the exact line search, fixed step length and backtracking line search, respectively.
+  - The function name should be `exact_steepest_descent_method` and `fixed_step_steepest_descent_method` and `backtracking_steepest_descent_method` for the exact line search, fixed step length and backtracking line search, respectively.
   - The functions should be defined in the file `steepest_descent.py` with the following signatures:
-    - `steepest_descent_exact(f, grad_f, x0, tol, max_iter)`: the function for the steepest descent method with exact line search.
-    - `steepest_descent_fixed_step(f, grad_f, x0, tol, max_iter, alpha)`: the function for the steepest descent method with backtracking line search. 
-    - `steepest_descent_backtracking(f, grad_f, x0, tol, max_iter)`: the function for the steepest descent method with backtracking line search.
+    - `exact_steepest_descent_method(objFunc, gradObjFunc, x0, tol, maxIter)`: the function for the steepest descent method with exact line search.
+    - `fixed_step_steepest_descent_method(objFunc, gradObjFunc, alpha,  x0, tol, maxIter)`: the function for the steepest descent method with backtracking line search. 
+    - `backtracking_steepest_descent_method(objFunc, gradObjFunc, x0, tol, maxIter)`: the function for the steepest descent method with backtracking line search.
 
 # :pushpin: README
 In the ``README.md`` file, you should include the following information:
