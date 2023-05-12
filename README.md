@@ -6,7 +6,7 @@ In this assignment, you will implement the following algorithms and apply them t
 - Backtracking line search
 - Steepest descent method with line search
 
-Your submission repository should be organized as follows.
+Your submission repository should be organized as follows. 
 
 ```
 -- root
@@ -16,7 +16,7 @@ Your submission repository should be organized as follows.
    |-- README.md
 ```
 
-The test files are provided in this starter kit. You should implement the algorithms in the corresponding files. 
+**The files are provided in this starter kit. You should implement the algorithms in the corresponding files. Please read the following assignments carefully.**
 
 # :round_pushpin: Backtracking Line Search
 In this part, you will write a program to solve some test problems using the heavy ball method with backtracking line search. 
