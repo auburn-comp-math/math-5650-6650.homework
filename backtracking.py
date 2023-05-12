@@ -7,8 +7,8 @@ import numpy as np
 @params d: descent direction
 @params alpha: initial step size
 @params rho: reduction factor
-@params c1: Armijo/Wolfe condition parameter
+@params c: Armijo/Wolfe condition parameter
 @returns: step size
 """
-def backtracking(f, grad_f, x, d, alpha, rho, c1):
+def backtracking(f, grad_f, x, d, alpha, rho, c):
     pass

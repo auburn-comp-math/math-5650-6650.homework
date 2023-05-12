@@ -30,13 +30,13 @@ In this part, you will write a program to solve some test problems using the hea
     - `backtracking.py`: the implementation of the backtracking line search.
 - :keyboard: Implementation
   - Task: Implement the backtracking line search, the algorithm follows the following steps:
-    > 1. Initialize $\alpha$ and $\rho\in(0,1)$ and Wolfe constant $c_1\in (0, 1)$.
+    > 1. Initialize $\alpha$ and $\rho\in(0,1)$ and Wolfe constant $c \in (0, 1)$.
     > 2. Set $\alpha_k = \alpha$.
-    > 3. While $f(x_k + \alpha_k d_k) > f(x_k) + c_1 \rho\alpha_k \nabla f(x_k)^T d_k$, update $\alpha_k = \alpha_k \rho$.
+    > 3. While $f(x_k + \alpha_k d_k) > f(x_k) + c \rho\alpha_k \nabla f(x_k)^T d_k$, update $\alpha_k = \alpha_k \rho$.
     > 4. Return $\alpha_k$.
 - :computer: Coding (Python)
   - The function name should be `backtracking` and should be defined in the file `backtracking.py` with the following signature:
-    - `backtracking(f, grad_f, x, d, alpha, rho, c1)`: the function for the backtracking line search.
+    - `backtracking(f, grad_f, x, d, alpha, rho, c)`: the function for the backtracking line search. 
 
 
 # :round_pushpin: Steepest Descent Method
