@@ -19,7 +19,7 @@ Your submission repository should be organized as follows.
 **The files are provided in this starter kit. You should implement the algorithms in the corresponding files. Please read the following assignments carefully.**
 
 # :round_pushpin: Backtracking Line Search
-In this part, you will write a program to solve some test problems using the heavy ball method with backtracking line search. 
+In this part, you will write a program to solve some test problems using the heavy ball method with the backtracking line search. 
 
 - :heavy_check_mark: Guideline
   
@@ -27,7 +27,7 @@ In this part, you will write a program to solve some test problems using the hea
   - The implementation is designed to help you understand the algorithm.
   - You are welcome to discuss this with others but should implement it on your own. 
   - The repository should contain the following file:
-    - `backtracking.py`: the implementation of the backtracking line search.
+    - `backtracking.py` is the implementation of the backtracking line search.
 - :keyboard: Implementation
   - Task: Implement the backtracking line search, the algorithm follows the following steps:
     > 1. Initialize $\alpha$ and $\rho\in(0,1)$ and Wolfe constant $c_1 \in (0, 1)$.
@@ -48,21 +48,21 @@ In this part, you will write a program to solve some test problems using the ste
   - The implementation is designed to help you understand the algorithm.
   - You are welcome to discuss this with others but should implement it on your own. 
   - The repository should contain the following files:
-    - `steepest_descent.py`: the implementation of the steepest descent method with line search.
-    - `test_steepest_descent.py`: the test script for `steepest_descent.py`.
+    - `steepest_descent.py` is the implementation of the steepest descent method with line search.
+    - `test_steepest_descent.py` is the test script for `steepest_descent.py`.
 - :keyboard: Implementation (Task 1 is given as an example, please complete Task 2 and Task 3)
-  - Task 1: Implement the steepest descent method with **exact** line search, the algorithm follows the following steps:
+  - Task 1: Implement the steepest descent method with the **exact** line search, the algorithm follows the following steps:
     > 1.  Initialize $x_0$ and set $k=0$.
     > 2.  Compute the search direction $d_k = -\nabla f(x_k)$.
     > 3.  Compute the step size $\alpha_k$ by exact line search.
     > 4.  Update $x_{k+1} = x_k + \alpha_k d_k$.
     > 5.  If the stopping criterion $\|d_k\|<\text{tol}$ is satisfied, stop; otherwise, set $k=k+1$ and go to step 2. 
-  - Task 2: Implement the steepest descent method with **fixed** step length, the algorithm follows the following steps:
+  - Task 2: Implement the steepest descent method with a **fixed** step length, the algorithm follows the following steps:
     > 1. Initialize $x_0$ and set $k=0$ and a fixed step size $\alpha$.
     > 2. Compute the search direction $d_k = -\nabla f(x_k)$.
     > 3. Update $x_{k+1} = x_k + \alpha d_k$.
     > 4. If the stopping criterion $\|d_k\|<\text{tol}$ is satisfied, stop; otherwise, set $k=k+1$ and go to step 2.
-  - Task 3: Implement the steepest descent method with backtracking line search, the algorithm follows the following steps:
+  - Task 3: Implement the steepest descent method with the backtracking line search, the algorithm follows the following steps:
     > 1. Initialize $x_0$ and set $k=0$.
     > 2. Compute the search direction $d_k = -\nabla f(x_k)$.
     > 3. Compute the step size $\alpha_k$ by backtracking line search.
@@ -71,9 +71,9 @@ In this part, you will write a program to solve some test problems using the ste
 - :computer: Coding (Python)
   - The function names should be `exact_steepest_descent_method` and `fixed_step_steepest_descent_method` and `backtracking_steepest_descent_method` for the exact line search, fixed step length and backtracking line search, respectively.
   - The functions should be defined in the file `steepest_descent.py` with the following signatures:
-    - `exact_steepest_descent_method(objFunc, gradObjFunc, x0, tol, maxIter)`: the function for the steepest descent method with exact line search.
-    - `fixed_step_steepest_descent_method(objFunc, gradObjFunc, alpha,  x0, tol, maxIter)`: the function for the steepest descent method with backtracking line search. 
-    - `backtracking_steepest_descent_method(objFunc, gradObjFunc, x0, tol, maxIter)`: the function for the steepest descent method with backtracking line search.
+    - `exact_steepest_descent_method(objFunc, gradObjFunc, x0, tol, maxIter)` is the function for the steepest descent method with exact line search.
+    - `fixed_step_steepest_descent_method(objFunc, gradObjFunc, alpha,  x0, tol, maxIter)` is the function for the steepest descent method with backtracking line search. 
+    - `backtracking_steepest_descent_method(objFunc, gradObjFunc, x0, tol, maxIter)` is the function for the steepest descent method with backtracking line search.
 
 - :test_tube: Testing (Python)
   ```
@@ -84,4 +84,4 @@ In this part, you will write a program to solve some test problems using the ste
 In the ``README.md`` file, you should include the following information:
 - Your name and email address.
 - The list of files in your submission repository.
-- The description of the implementation and report comparison results for convergence behavior, number of iterations for the three methods based on the test cases.
+- The description of the implementation and report comparison results for convergence behavior and number of iterations for the three methods based on the test cases.
