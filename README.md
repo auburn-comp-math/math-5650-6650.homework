@@ -69,7 +69,7 @@ In this part, you will write a program to solve some test problems using the ste
     > 4. Update $x_{k+1} = x_k + \alpha_k d_k$.
     > 5. If the stopping criterion $\|d_k\|<\text{tol}$ is satisfied, stop; otherwise, set $k=k+1$ and go to step 2.
 - :computer: Coding (Python)
-  - The function name should be `exact_steepest_descent_method` and `fixed_step_steepest_descent_method` and `backtracking_steepest_descent_method` for the exact line search, fixed step length and backtracking line search, respectively.
+  - The function names should be `exact_steepest_descent_method` and `fixed_step_steepest_descent_method` and `backtracking_steepest_descent_method` for the exact line search, fixed step length and backtracking line search, respectively.
   - The functions should be defined in the file `steepest_descent.py` with the following signatures:
     - `exact_steepest_descent_method(objFunc, gradObjFunc, x0, tol, maxIter)`: the function for the steepest descent method with exact line search.
     - `fixed_step_steepest_descent_method(objFunc, gradObjFunc, alpha,  x0, tol, maxIter)`: the function for the steepest descent method with backtracking line search. 
