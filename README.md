@@ -1,7 +1,7 @@
 # Starter Kit for Line Search
 
 # :memo: Introduction 
-In this assignment, you will implement the following algorithms and apply them to the test problems. 
+In this assignment, you will implement the following algorithms and apply them to the test problems. If you are using other programming languages instead of Python, please adjust the starter kit accordingly.
 
 - Backtracking line search
 - Steepest descent method with line search
