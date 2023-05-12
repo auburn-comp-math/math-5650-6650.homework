@@ -50,7 +50,7 @@ In this part, you will write a program to solve some test problems using the ste
   - The repository should contain the following files:
     - `steepest_descent.py`: the implementation of the steepest descent method with line search.
     - `test_steepest_descent.py`: the test script for `steepest_descent.py`.
-- :keyboard: Implementation
+- :keyboard: Implementation (Task 1 is given as an example, please complete Task 2 and Task 3)
   - Task 1: Implement the steepest descent method with **exact** line search, the algorithm follows the following steps:
     > 1.  Initialize $x_0$ and set $k=0$.
     > 2.  Compute the search direction $d_k = -\nabla f(x_k)$.
