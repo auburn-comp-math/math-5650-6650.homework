@@ -75,6 +75,11 @@ In this part, you will write a program to solve some test problems using the ste
     - `fixed_step_steepest_descent_method(objFunc, gradObjFunc, alpha,  x0, tol, maxIter)`: the function for the steepest descent method with backtracking line search. 
     - `backtracking_steepest_descent_method(objFunc, gradObjFunc, x0, tol, maxIter)`: the function for the steepest descent method with backtracking line search.
 
+- :test_tube: Testing (Python)
+  ```
+  pytest -q test_steepest_descent.py
+  ```
+
 # :pushpin: README
 In the ``README.md`` file, you should include the following information:
 - Your name and email address.
