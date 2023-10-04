@@ -6,7 +6,7 @@ In this assignment, you will implement the following algorithms and apply them t
 - Backtracking line search
 - Steepest descent method with line search
 
-Your submission repository should be organized as follows. 
+Please fork this repository first and make necessary modifications for the following tasks. Your submission repository should be organized as follows. 
 
 ```
 -- root
@@ -14,6 +14,7 @@ Your submission repository should be organized as follows.
    |-- test_steepest_descent.py
    |-- backtracking.py
    |-- README.md
+   |-- ...
 ```
 
 **The files are provided in this starter kit. You should implement the algorithms in the corresponding files. Please read the following assignments carefully.**
